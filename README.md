@@ -68,8 +68,8 @@ Edit
 | course_id  |<------>| course_id |         | admin_id   |
 | name       |        | student_id|         | email      |
 | info       |        | name      |         | password   |
-                    | email     |
-                    | password  |
+                      | email     |
+                      | password  |
 
 👨‍💻 Author
 Parth Dholariya
