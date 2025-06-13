@@ -51,16 +51,26 @@ StudentCourseManagementSystem/
 ├── Main.java
 └── README.md
 
-🧮 Database Schema
+-- Create tables
+CREATE TABLE Admin (
+    admin_id INT PRIMARY KEY AUTO_INCREMENT,
+    email VARCHAR(100) NOT NULL,
+    password VARCHAR(100) NOT NULL
+);
 
-+------------+ +-----------+ +------------+
-| Course | | Student | | Admin |
-+------------+ +-----------+ +------------+
-| course_id |<----->| course_id | | admin_id |
-| name | | student_id| | email |
-| info | | name | | password |
-| email |
-| password |
+CREATE TABLE Course (
+    course_id INT PRIMARY KEY,
+    name VARCHAR(100),
+    info TEXT
+);
 
+CREATE TABLE Student (
+    student_id INT PRIMARY KEY,
+    name VARCHAR(100),
+    email VARCHAR(100),
+    course_id INT,
+    password VARCHAR(100),
+    FOREIGN KEY (course_id) REFERENCES Course(course_id)
+);
 👨‍💻 Author
 Parth Dholariya
