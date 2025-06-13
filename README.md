@@ -37,31 +37,30 @@ A **Java-based console application** for managing student enrollments and course
 🗂️ Project Structure
 StudentCourseManagementSystem/
 ├── dao/
-│   ├── AdminDAO.java
-│   ├── CourseDAO.java
-│   └── StudentDAO.java
+│ ├── AdminDAO.java
+│ ├── CourseDAO.java
+│ └── StudentDAO.java
 ├── model/
-│   ├── Admin.java
-│   ├── Course.java
-│   └── Student.java
+│ ├── Admin.java
+│ ├── Course.java
+│ └── Student.java
 ├── utils/
-│   └── DatabaseConnection.java
+│ └── DatabaseConnection.java
 ├── enums/
-│   └── MenuOption.java
+│ └── MenuOption.java
 ├── Main.java
 └── README.md
 
 🧮 Database Schema
 
-+------------+       +-----------+       +------------+
-|  Course    |       |  Student  |       |   Admin    |
-+------------+       +-----------+       +------------+
-| course_id  |<----->| course_id |       | admin_id   |
-| name       |       | student_id|       | email      |
-| info       |       | name      |       | password   |
-                     | email     |
-                     | password  |
-
++------------+ +-----------+ +------------+
+| Course | | Student | | Admin |
++------------+ +-----------+ +------------+
+| course_id |<----->| course_id | | admin_id |
+| name | | student_id| | email |
+| info | | name | | password |
+| email |
+| password |
 
 👨‍💻 Author
 Parth Dholariya
